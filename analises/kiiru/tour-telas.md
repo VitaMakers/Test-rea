@@ -140,3 +140,74 @@ Abas: **Meu perfil** (dados pessoais, CPF, endereço com CEP, troca de senha),
 - Detalhe de um cliente, de uma tarefa (o modal), do menu **Cadastros** do
   financeiro e dos formulários de criação.
 - Portal do cliente e link de aprovação, vistos pelo lado do cliente.
+
+## Etapa 2: dentro das telas (só leitura)
+
+### Financeiro
+
+- **Cadastros** abre: **Categorias** (abas Entradas, Fixas e Variáveis, com
+  categoria principal e subcategorias), **Contas** financeiras, **Fornecedores**,
+  **Serviços** (catálogo de serviços da agência) e **Ajustar saldo inicial**.
+- **Nova receita** (+ A receber): cliente, competência (mês de referência),
+  valor, descrição, categoria, parcelamento (à vista ou parcelado), vencimento,
+  status "já recebido", observações e anexo.
+- **Nova despesa** (+ A pagar): os mesmos campos, mais fornecedor; cliente é opcional.
+- **A receber**: tabela com data, descrição, categoria, cliente, status e valor;
+  filtros por cliente e status (todos, recebido etc.) e busca.
+- **Movimentações**: retirada, aporte e transferência entre contas, filtro por conta.
+- **DRE**: valores ou % do faturamento, comparativo mensal, competência ou caixa,
+  exportação; estrutura faturamento − despesas variáveis − despesas fixas.
+
+### Painel de produção
+
+- **Configurar colunas**: adicionar coluna, cor de cada coluna e, por coluna,
+  as opções **Link de aprovação** e **Sumir do portal**.
+
+### Automações
+
+- Tempo estimado por formato: **Feed/Post**, **Reels/Shorts**, **Story**, **Carrossel**.
+
+### Relatórios
+
+- **Rentabilidade** por cliente: horas, receita, custo, margem, R$/hora e
+  cobertura; opção de incluir arquivados.
+- **Horas**: por projetos e tarefas, colaboradores, canal e formato, etapa, e
+  **estimado × realizado**; exportação em PDF.
+
+### Publicações (`/integrations`)
+
+Duas visões: **Status dos envios** (filtros por tipo, cliente, canal, formato
+e data; busca por código) e **Contas conectadas**.
+
+### Detalhe do cliente (`/brands/:id`)
+
+Abas: **Visão geral**, **Informações**, **Faturamento**, **Portal do cliente**,
+**Pastas**, **Feed**, **Formulários**, **Equipe**, **Indicadores** e **Histórico**.
+A visão geral traz linha do tempo, redes conectáveis (Instagram, TikTok,
+Facebook, YouTube, LinkedIn, X e Threads), tarefas por etapa, grupos de WhatsApp,
+portal do cliente (com login ou acesso por link), arquivos, **hashtags padrão** e
+**palavras proibidas**.
+
+### Nova tarefa (formulário)
+
+Título, objetivo, canal (Instagram, TikTok, YouTube, LinkedIn, X, Facebook,
+Threads, Blog, material gráfico ou tarefa interna), formato (Feed, Reels, Story,
+Carrossel), mídia, referências, **briefing interno** (só equipe), **briefing do
+cliente** (aparece no portal), legenda, roteiro, checklist, publicar em
+(só salvar, publicar agora ou agendar), colab, etapa, painel, cliente, projeto,
+responsáveis, autor, início, prazo, data de conclusão, tags, prioridade,
+lembrete e recorrência.
+
+### Configurações
+
+- **Permissões**: funções do sistema (ex.: Administrador com acesso total,
+  Gerência com 34 permissões) e criação de novas funções.
+- **Parâmetros**: título das tarefas sempre em maiúsculas, inclusive as abertas
+  pelo cliente no portal.
+
+### Comportamentos observados
+
+- O botão **Novo projeto** cria o projeto na hora, sem formulário (a gravação
+  foi bloqueada pelo robô).
+- A tela de contas conectadas sincroniza as contas sozinha ao abrir.
+- Ao entrar na conta, a Kiiru encerra as outras sessões abertas do usuário.
