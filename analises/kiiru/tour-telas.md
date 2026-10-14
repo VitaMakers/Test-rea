@@ -211,3 +211,30 @@ lembrete e recorrência.
   foi bloqueada pelo robô).
 - A tela de contas conectadas sincroniza as contas sozinha ao abrir.
 - Ao entrar na conta, a Kiiru encerra as outras sessões abertas do usuário.
+
+## Etapa 3: testes de criação (em andamento)
+
+Só na marca de teste **Nova Marca**, com cada gravação liberada passo a passo
+e registrada.
+
+### Tarefa criada
+
+- Tarefa interna "TESTE CLAUDE 1" (código PUB-59250), etapa Ideia.
+- Ao criar, o app fez três gravações: a tarefa, o destino de publicação dela e
+  o cálculo/congelamento da estimativa de horas.
+- Campos enviados na criação de uma tarefa: título, canal, formato, painel,
+  cliente, coluna (etapa), responsável, autor, usuário, projeto, prioridade,
+  visível ao cliente, exige aprovação para publicar, data de conclusão, hora
+  prevista, início, status, data agendada, descrição, legenda, briefing interno,
+  roteiro, briefing do cliente, flags de visibilidade no portal (roteiro,
+  legenda, descrição, briefing, referências), links de referência, anexos
+  internos, colaboradores, miniatura, arquivos, regra de recorrência e capa de Reels.
+- A automação de **Fluxo da equipe** atribuiu um responsável sozinha logo após
+  a criação.
+
+### Modal da tarefa
+
+Abas **Detalhes**, **Comentários**, **Tempo** e **Histórico**; briefing com
+salvamento automático e gravação de instrução por voz; botões **Iniciar
+relógio**, **Link de aprovação**, **Ajuste interno**, **Finalizar tarefa**,
+**Salvar** e lixeira.
