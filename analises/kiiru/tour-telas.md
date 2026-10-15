@@ -238,3 +238,22 @@ Abas **Detalhes**, **Comentários**, **Tempo** e **Histórico**; briefing com
 salvamento automático e gravação de instrução por voz; botões **Iniciar
 relógio**, **Link de aprovação**, **Ajuste interno**, **Finalizar tarefa**,
 **Salvar** e lixeira.
+
+### Mudança de etapa
+
+- Etapas disponíveis no modal: Ideia, Roteiros, Em produção, Em revisão,
+  Aguardando aprovação, Aprovado, Agendado e Publicado.
+- Ao salvar a tarefa em outra etapa, o app grava a nova etapa na tarefa,
+  confirma o responsável e chama uma rotina que **encerra o cronômetro** de
+  quem estava contando tempo ao trocar de etapa.
+
+### Lançamento financeiro (a receber)
+
+- Formulário completo: cliente, competência (com a dica "mês a que a receita se
+  refere"), valor, descrição, categoria, **repetir este lançamento**
+  (recorrência), parcelamento, vencimento, status "já recebido", observações e
+  anexo (PDF ou imagem até 5 MB); botão salvar com opções extras.
+- Campos gravados: organização, tipo (entrada ou saída), valor, descrição,
+  competência, data do lançamento, data de baixa, status (ex.: agendado),
+  categoria, cliente, fornecedor, observações, serviço, recorrência, grupo de
+  parcelamento, número e total de parcelas.
