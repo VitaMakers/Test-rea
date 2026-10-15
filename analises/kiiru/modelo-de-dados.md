@@ -95,10 +95,34 @@ Funções existentes na conta analisada: **Administrador** (acesso total) e
   internos (quantos painéis e publicações foram encontrados). No nosso sistema
   isso não deve ir para o cliente.
 
+**Ciclo de aprovação (visto pelo lado da agência)**
+
+1. A tarefa é criada já marcada para o portal: o app grava **quando e por quem
+   foi enviada ao cliente** e chama a função que avisa o cliente (que responde
+   quantas pessoas foram notificadas). O card vai para **Aguardando aprovação**.
+2. O cliente **pede ajuste** no portal: a automação move o card para
+   **Em revisão** e o texto do pedido fica gravado na tarefa.
+3. A equipe ajusta (no teste, a legenda) e reenvia: o pedido anterior é
+   limpo, o cliente é avisado com o tipo **"reajuste"** e o card volta para
+   **Aguardando aprovação**.
+4. O cliente **aprova**: a automação move para **Aprovado** e grava a data da
+   aprovação.
+
+Campos de aprovação na tarefa: quando o portal pediu, se exige aprovação para
+publicar, data de aprovação do cliente, feedback do cliente e se a equipe já
+leu, data em que o cliente enviou material, aprovado em e por quem, e o mesmo
+conjunto **separado para o roteiro** (visível, aprovado em, feedback). O
+cliente também pode responder com **áudio**.
+
+Configurações do portal alteradas no teste: mostrar tarefas, mostrar faturas,
+agrupar aprovações por projeto e **cancelar automaticamente o agendamento de
+publicações sem aprovação**.
+
 ## Não coberto pelas gravações
 
 - **Criação de lançamento a pagar**: não aparece na gravação.
-- Envio para aprovação, aprovação e pedido de ajuste pelo cliente.
+- As chamadas do portal no momento em que o cliente aprova ou pede ajuste
+  (o efeito delas aparece no lado da agência).
 
 ## Tabelas e colunas vistas
 
