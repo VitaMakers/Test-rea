@@ -71,10 +71,32 @@ Funções existentes na conta analisada: **Administrador** (acesso total) e
   entidade, detalhes e IP.
 - O perfil do usuário atualiza "visto por último" e "último login" sozinho.
 
+**Portal do cliente (lado do cliente)**
+
+- Fica num **subdomínio separado**, com endereço próprio por cliente
+  (`portal.<domínio>/<apelido-do-cliente>/...`).
+- O portal **não lê o banco diretamente**: tudo passa por funções do servidor
+  dedicadas (validar acesso, publicações, tarefas, arquivos, prévia do feed e
+  faturas). É uma camada de segurança que isola o cliente dos dados internos.
+- Ao abrir, uma chamada leve "acorda" as funções antes do uso, para não haver
+  demora na primeira tela.
+- A validação de acesso devolve o token da sessão, o usuário (nome, e-mail,
+  primeiro acesso, se é acesso anônimo por link), a marca e as
+  **configurações do portal**: cor principal, logo e capa; quais áreas
+  aparecem (painel, calendário, aprovações, arquivos, feed, dados da marca,
+  briefings, tarefas e faturas); quais indicadores mostrar (aguardando
+  aprovação, aprovados no mês, agendados, publicados, dias sem postar);
+  agrupar aprovações por projeto; permitir que o cliente abra tarefas; e por
+  quantos dias manter visíveis os itens aprovados.
+- Publicações chegam em três recortes: resumo do painel (com linhas de
+  indicadores), lista de aprovações e calendário por mês.
+- Arquivos chegam separados em pastas, arquivos dentro de pastas e arquivos soltos.
+- Observação: as respostas do portal incluem um bloco de depuração com dados
+  internos (quantos painéis e publicações foram encontrados). No nosso sistema
+  isso não deve ir para o cliente.
+
 ## Não coberto pelas gravações
 
-- **Portal do cliente pelo lado do cliente**: a gravação ficou só do lado da
-  agência.
 - **Criação de lançamento a pagar**: não aparece na gravação.
 - Envio para aprovação, aprovação e pedido de ajuste pelo cliente.
 
