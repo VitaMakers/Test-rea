@@ -146,3 +146,94 @@ API pública, buscador de pautas com IA, chaves de API e webhooks.
 
 Painel do dono do SaaS: workspaces, planos, recursos liberados por workspace,
 usuários, avisos, chamados de suporte e webhooks.
+
+## Aprofundamento (segunda leitura do código, todos os módulos)
+
+Sem conta na Pautta, nada disto foi visto funcionando; é o que o código das
+telas indica.
+
+### Pauta (tarefas do dia a dia)
+
+- Agenda de tarefas por colaborador e cliente, com recorrência (a cada N dias,
+  em dias úteis ou corridos), duplicação para vários colaboradores, cor de
+  destaque, troca de responsável e mover em lote.
+- **Tarefas sugeridas e conclusão com aprovação**: o gestor aprova a tarefa ou
+  a conclusão; o colaborador anexa um **comprovante** (link) e informa quantas
+  entregas fez, o que alimenta os pontos do OnTrack.
+- **Catálogo de tarefas por setor**, cada tipo com sua **pontuação**; uma tag
+  liga a tarefa ao quadro "Geral".
+- "Demanda extra" marca trabalho fora do escopo combinado.
+
+### Criação (detalhe do pack e do post)
+
+- Pack com posts, calendário próprio, prévia do feed e capa do feed ajustável.
+- Post: carrossel, capa de vídeo, marcação de pessoas, cards de briefing,
+  arquivos de até 500 MB, backup de fotos e vídeos, arquivo pronto para
+  impressão, baixar mídia e PDF.
+- Agendamento e remoção de agendamento direto no Instagram e no Facebook.
+- **Ajuste com marcação**: no vídeo, o cliente aponta o minuto e segundo; na
+  imagem, clica no ponto exato e escreve o que mudar.
+- Ideias por cliente com imagens e links de referência, tipo e tags, com
+  salvamento automático.
+
+### Portal do cliente (lado do cliente)
+
+- Entrada por link, com **PIN de 4 dígitos** e/ou **lista de e-mails
+  autorizados**, e proteção contra excesso de tentativas.
+- Entregas organizadas em "entregas" (packs publicados), modo de visualização
+  como Instagram, aprovação, pedido de ajuste e chat com a agência.
+- A agência vê quem acessou o portal, quem ainda não abriu e quem aprovou cada post.
+- O portal também conecta redes do cliente (Instagram, TikTok, LinkedIn) para
+  publicação, com opções como música automática em posts de foto.
+
+### Roteiro público
+
+Link de roteiro editável pelo cliente: cenas a gravar, narração, briefing de
+fotos, briefing geral da captação, entregáveis previstos, observações de edição
+e de captação, referências e capa; o link expira.
+
+### Financeiro (detalhes)
+
+- **DRE** de 12 meses por competência com receita bruta e líquida, recorrente e
+  variável, e despesas separadas em variável, operacional, administrativa,
+  comercial e financeira.
+- **Fluxo de caixa**: caixa inicial, movimento do mês, caixa final e extrato.
+- **Configurações do ano**: saldo inicial, clientes iniciais, metas de receita
+  (anual e de crescimento), dias úteis por mês (multiplicam VR e VT) e a
+  **régua de bônus por ranking** do OnTrack, que entra na folha.
+
+### Equipe
+
+- Cadastro do colaborador com foto, clientes que atende, emblemas e chaves
+  para participar ou não da pauta, do OnTrack e do Hall da Fama; o acesso ao
+  sistema é criado automaticamente e pode ser desativado ou reativado.
+- Perfil com produtividade diária, média, distribuição por cliente, evolução
+  no ranking, coleção de emblemas e skills.
+- **Desligamento**: escolher o que fazer com cada tarefa aberta (mover para
+  outra pessoa, deixar sem responsável ou excluir), separando criação,
+  onboarding e ajustes de cliente.
+
+### Configurações e white label
+
+Logos para modo claro e escuro (inclusive versão recolhida), imagem de fundo e
+rodapé dos PDFs gerados, modelos de permissão, clientes e colaboradores.
+
+### Comunicação e conhecimento
+
+- Chat por canais com busca, membros, edição e exclusão de mensagens e
+  **exportação da conversa em PDF**.
+- Academy com páginas protegidas por senha (com dica), que administradores
+  abrem sem senha, e exportação em PDF.
+- Lembretes com recorrência em dias úteis, adiar e parar a repetição.
+
+### Integrações abertas
+
+- **Chaves de API** com escopos (leitura de clientes, tarefas e workspace;
+  leitura e escrita de chats; comentários em posts) e validade opcional.
+- **Webhooks** com eventos de chat, comentários e movimentação de packs e
+  posts, e histórico de entregas.
+
+### Lixeira
+
+Restaura cards, ciclos, conversas, documentos, packs e posts (acesso só de
+administradores).
