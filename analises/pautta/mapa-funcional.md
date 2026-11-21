@@ -269,3 +269,44 @@ Dados públicos da página de planos (`pautta.app/#planos`), renderizada em nave
   colaboradores ilimitados. Útil para posicionar os planos da Virtù.
 - A comparação deles com ClickUp/Notion confirma que os diferenciais
   percebidos são: agendamento, aprovação do cliente, onboarding e white label.
+
+## Passagem profunda (21/11/2026) — novidades e detalhes
+
+Reanálise do app atualizado, com o catálogo completo de endpoints em
+[`endpoints-api.md`](endpoints-api.md). O que apareceu além do mapa anterior:
+
+- **Publicação pela própria agência:** além do agendamento, há rota de
+  `agency-publish` e `auto-publish` por post — a agência publica/automatiza a
+  publicação, não só agenda.
+- **Captação dentro do pack:** itens de captação (gravação) com reordenação, e
+  `pull-from-captacao` / `send-to-pack` / `move-to-pack` movendo posts entre
+  packs e a captação. Posts podem ter **sub-posts** (carrossel/variações).
+- **Presets de marcação de vídeo** (`video-tag-presets`): modelos reutilizáveis
+  para os ajustes com minutagem no vídeo.
+- **Auto-atribuição configurável** no Kanban (`kanban-settings/auto-assign`)
+  com regras por **função/cargo**.
+- **Módulo Gestão** (`gestao/`): visão de operação com drill-down, ajustes,
+  entregas por cliente, extras, evolução de ranking e escopo — o painel
+  gerencial "pesado", separado do dashboard simples.
+- **Reuniões com assinatura jurídica:** páginas de ata com `formalize`, `sign`,
+  `signatures` e `availability` (horários livres) — atas assináveis, não só notas.
+- **Catálogo de tarefas e RBAC:** `task-catalog` (tipos de tarefa com pontos) e
+  `rbac/permissions` como base do controle de acesso.
+- **Branding e TV nas configurações:** `settings/branding` (white label) e
+  `settings/tv` (modo TV) são configuráveis por workspace.
+- **Conformidade com a Meta:** `admin/integration-data-deletion` — fluxo de
+  exclusão de dados exigido por quem integra com Facebook/Instagram.
+- **Administração da plataforma (superadmin), forte:** entrar como um workspace
+  (`ghost-enter`/`ghost-exit`, ou seja, personificar para dar suporte),
+  reconciliar, resetar senha, e ligar **recursos e limite de usuários por
+  workspace** (`features`, `user-limit`) — é assim que eles controlam o que cada
+  plano libera.
+
+### Leitura para a Virtù
+
+- O controle de **recursos por workspace** (`features`) confirma o caminho que
+  já tínhamos escolhido: módulos ligáveis por workspace organizam os planos.
+- **Personificar workspace** (ghost) é ótimo para suporte, mas é sensível:
+  na Virtù, se existir, tem que ficar registrado em auditoria.
+- A **exclusão de dados da Meta** é obrigatória assim que a Virtù publicar no
+  Instagram/Facebook — já deixar previsto.
