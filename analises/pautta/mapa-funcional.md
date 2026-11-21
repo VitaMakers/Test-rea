@@ -237,3 +237,35 @@ rodapé dos PDFs gerados, modelos de permissão, clientes e colaboradores.
 
 Restaura cards, ciclos, conversas, documentos, packs e posts (acesso só de
 administradores).
+
+## Comercial e planos (site de vendas, 21/11/2026)
+
+Dados públicos da página de planos (`pautta.app/#planos`), renderizada em navegador.
+
+- **Preço anunciado:** "a partir de **R$ 197/mês**". A página pública não mostra
+  uma tabela com vários planos; a ação é **"Agendar demonstração"** — venda
+  assistida, não checkout automático. Não há link de pagamento público exposto.
+- **O que o plano inclui (checklist "Assine agora mesmo"):** agendamento de
+  publicações; controle das tarefas do time; controle dos primeiros 30 dias do
+  cliente (onboarding); dashboards de indicadores da agência; central de
+  educação e processos; chat interno; portal de entrega de conteúdo; gestão de
+  colaboradores; e, como **bônus, o aplicativo white label**.
+- **Vínculo com curso:** a Pautta é ligada ao treinamento "Agência Organizada" /
+  "Agência Organizada Black" (Don / dondigital). Alunos têm condição especial,
+  mas não-alunos também assinam.
+- **Posicionamento:** o site compara a Pautta com **ClickUp e Notion**,
+  destacando como vantagens exclusivas: agendamento de posts, aprovação de
+  conteúdo com o cliente, dashboards, estrutura de onboarding e white label.
+- **FAQ (fatos confirmados):** agendamento publica no **Meta**; o cliente
+  aprova e pede ajuste dentro do app; **sem limite** de clientes e
+  colaboradores; serve para agências de tráfego que também entregam criativo;
+  e serve para quem ainda trabalha sozinho.
+
+### Leitura para a Virtù
+
+- A Pautta é **venda assistida e sem autosserviço**, atrelada a um curso. Isso
+  deixa espaço para a Virtù ter **cadastro e teste self-service**.
+- Preço de referência de mercado: **~R$ 197/mês** por agência, com clientes e
+  colaboradores ilimitados. Útil para posicionar os planos da Virtù.
+- A comparação deles com ClickUp/Notion confirma que os diferenciais
+  percebidos são: agendamento, aprovação do cliente, onboarding e white label.
